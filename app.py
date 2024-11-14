@@ -21,8 +21,8 @@ for item in os.listdir(directory_path):
     else:
         os.remove(item_path)
 
-st.log("All items in the directory have been removed.")
-st.log(f"PyTorch version: {torch.__version__}")
+st.write("All items in the directory have been removed.")
+st.write(f"PyTorch version: {torch.__version__}")
         
 # Set the path to your weights and model file
 WEIGHTS_PATH = "classification_project/yolo_cassava_classification2/weights/best.pt"
