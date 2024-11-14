@@ -5,6 +5,7 @@ import os
 from PIL import Image
 import os
 import shutil
+import torch
 
 # Define the directory path relative to the script's location
 base_directory = os.path.dirname(os.path.abspath(__file__))
