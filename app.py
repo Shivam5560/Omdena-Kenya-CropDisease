@@ -8,6 +8,7 @@ import shutil
 
 # Define the directory path relative to the script's location
 base_directory = os.path.dirname(os.path.abspath(__file__))
+print(base_directory)
 directory_path = os.path.join(base_directory, 'runs/predict-cls')
 
 # List all items in the directory
