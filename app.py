@@ -6,8 +6,9 @@ from PIL import Image
 import os
 import shutil
 
-# Define the directory path
-directory_path = '/runs/predict-cls'
+# Define the directory path relative to the script's location
+base_directory = os.path.dirname(os.path.abspath(__file__))
+directory_path = os.path.join(base_directory, 'runs/predict-cls')
 
 # List all items in the directory
 for item in os.listdir(directory_path):
