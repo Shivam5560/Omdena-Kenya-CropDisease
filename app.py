@@ -54,7 +54,7 @@ if uploaded_file is not None:
     d = {}
     for x in val:
         a = x.strip().split(' ')
-        d[a[0]]= float(a[1])
+        d[a[0]]= a[1]
     with st.sidebar:
         st.write("Results")
         st.json(d)
