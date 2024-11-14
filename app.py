@@ -48,16 +48,6 @@ if uploaded_file is not None:
 
     # Parse the output to get class labels and confidence scores
     output_text = result.stderr
-    start_idx = output_text.find("224x224") + 8
-    val = output_text[start_idx:].split(',')[:5]
-    d = {}
-    for x in val:
-        a = x.strip().split(' ')
-        d[a[0]]= float(a[1])
-    with st.sidebar:
-        st.write("Results")
-        st.json(d)
-
-
+    st.write(output_text)
     # Clean up temporary image
     os.remove(img_path)
