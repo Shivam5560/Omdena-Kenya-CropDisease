@@ -17,6 +17,9 @@ for item in os.listdir(directory_path):
         # Remove the folder and its contents
         shutil.rmtree(item_path)
     else:
+        os.remove(item_path)
+
+print("All items in the directory have been removed.")
         
 # Set the path to your weights and model file
 WEIGHTS_PATH = "/classification_project/yolo_cassava_classification2/weights/best.pt"
